@@ -1,0 +1,37 @@
+{
+    "name": "clasp-test",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "node",
+    "postCreateCommand": "npm install",
+    "workspaceFolder": "/usr/src/clasp-test",
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ibm.output-colorizer",
+        "ionutvmi.path-autocomplete",
+        "nickdemayo.vscode-json-editor",
+        "pkief.material-icon-theme",
+        "shardulm94.trailing-spaces"
+    ],
+    "settings": {
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "editor.formatOnSave": true,
+        "extensions.ignoreRecommendations": true,
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+        "prettier.printWidth": 120,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/bin/bash"
+            }
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.tabSize": 2,
+            "editor.insertSpaces": true
+        }
+    }
+}
